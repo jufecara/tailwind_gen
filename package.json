@@ -1,0 +1,23 @@
+{
+  "name": "tailwind_gen",
+  "version": "1.0.0",
+  "description": "Tool to generate a customized version of Taildwind CSS for the project inside the src folder",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss src/css/main.css -o ./dist/tailwind.min.css",
+    "watch": "watch \"npm run build:css\" ./src"
+  },
+  "keywords": [],
+  "author": "Juan Castrillon <jfcastrillonr@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.2",
+    "cssnano": "^4.1.10",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0",
+    "watch": "^1.0.2"
+  }
+}
