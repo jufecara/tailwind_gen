@@ -4,7 +4,7 @@
   "description": "Tool to generate a customized version of Taildwind CSS for the project inside the src folder",
   "main": "index.js",
   "scripts": {
-    "build:css": "postcss src/css/main.css -o ./dist/tailwind.min.css",
+    "gen:styles": "postcss src/css/main.css -o ./dist/styles.min.css",
     "watch": "watch \"npm run build:css\" ./src"
   },
   "keywords": [],
